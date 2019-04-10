@@ -29,6 +29,12 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
 
-// Routes
+// Routes:
 
-// 
+// A GET route for scraping the cinemablend website and then add it to the db
+
+// A GET route for GETting all of the articles from the db
+
+// A GET route for grabbing a specific article by id, then populating it with its comment
+
+// A POST route for saving/updating an article's associated comment
