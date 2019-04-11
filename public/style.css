@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 
-body {
+.banner {
   background-image: url("./images/background.jpg");
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover; */
   background-size: cover;
-  background-position: center center;
-  height: 100vh;
+  /* background-position: center center; */
+  height: 80vh;
+  padding-top: 25px
 }
 
 .menu-area li a{
@@ -30,10 +31,6 @@ body {
 .menu-area li{
   list-style: none;
   display: inline-block;
-}
-
-.custom-padding{
-  padding-top: 25px
 }
 
 nav{
@@ -74,7 +71,7 @@ footer{
   left: 0;
   bottom: 0;
   height: 40px;
-  width: calc(100% - 60px);
+  width: 100%;
   text-align: center;
   background-color: #333;
 }
