@@ -12,7 +12,34 @@
   background-size: cover;
   /* background-position: center center; */
   height: 80vh;
-  padding-top: 25px
+  padding-top: 25px;
+  box-shadow: 5px 20px rgb(10, 8, 8);
+  z-index: 2;
+}
+
+#bannerHeading{
+  font-size: 65px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+#bannerHeading::first-letter{
+  font-size: 100px;
+}
+
+#bannerSubheading{
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+span{
+  font-size: 100px;
 }
 
 .menu-area li a{
@@ -44,13 +71,17 @@ nav{
 }
 
 .logo{
-  width: 40%;
   float: left;
   text-transform: uppercase;
   color: #fff;
   font-size: 15px;
   text-align: left;
   padding-left: 2%;
+  padding-right: 2%;
+}
+
+.logo:hover{
+  border: .5px solid #fff;
 }
 
 #capitalLetter{
@@ -74,4 +105,28 @@ footer{
   width: 100%;
   text-align: center;
   background-color: #333;
+  padding-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.articles{
+  background-image: url("./images/backgroundTile.PNG");
+  background-repeat: repeat;
+  height: 500px;
+}
+
+#scrapeArticlesButton{
+  background-color: rgb(219, 114, 95);
+  color: #fff;
+  border: 0px;
+  padding: 15px 30px;
+  font-family: "serif";
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  margin-top: 40px;
+}
+
+.buttonDiv{
+  text-align: center;
 }
