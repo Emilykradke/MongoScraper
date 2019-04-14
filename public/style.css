@@ -13,7 +13,7 @@
   /* background-position: center center; */
   height: 80vh;
   padding-top: 25px;
-  box-shadow: 5px 20px rgb(10, 8, 8);
+  box-shadow: 5px 20px rgb(68, 65, 65);
   z-index: 2;
 }
 
@@ -71,6 +71,7 @@ nav{
 }
 
 .logo{
+  text-decoration: none;
   float: left;
   text-transform: uppercase;
   color: #fff;
@@ -82,6 +83,11 @@ nav{
 
 .logo:hover{
   border: .5px solid #fff;
+  text-decoration: none;
+}
+
+.logo:visited{
+  color: #fff;
 }
 
 #capitalLetter{
@@ -113,7 +119,8 @@ footer{
 .articles{
   background-image: url("./images/backgroundTile.PNG");
   background-repeat: repeat;
-  height: 500px;
+  padding: 50px;
+  z-index: -1;
 }
 
 #scrapeArticlesButton{
@@ -129,4 +136,84 @@ footer{
 
 .buttonDiv{
   text-align: center;
+}
+
+.card {
+  width: 90%;
+  /* height: 200px; */
+  max-height: 300px;
+  padding: 20px;
+  /* border: 2px solid white; */
+  border-radius: 6px;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.card-image {
+  width: 150px;
+  height: 200px;
+  /* margin-right: 20px; */
+  border-radius: 6px;
+  border: 2px solid black;
+}
+
+.card-article-info-container {
+  width: 60%;
+  margin-right: 20px;
+}
+
+.card-text-block {
+  margin-right: 20px;
+  display: block;
+}
+
+.article-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.article-summary {
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 100px;
+}
+/* 
+.card-actions {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.btn-save {
+  background-color: #ffa500;
+  border: none;
+  border-radius: 6px;
+  border: 2px solid #5a5a5a;
+  padding: 20px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+} */
+
+.btn-save:hover {
+  background-color: #ffa500;
+  border: 2px solid black;
+  box-shadow: 0px 5px 40px -10px rgba(255,255,255,0.57);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transform: translateY(-1px) scale(1.01); 
+  transition: all .1s ease-in; 
+  outline: none;
 }

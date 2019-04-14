@@ -18,19 +18,17 @@ var ArticleSchema = new Schema({
   },
   // 'image' is required, of type string, and data buffer
   image: {
-    data: Buffer,
-    contentType: String
+    type: String
+  },
+  saved: {
+    boolean: false
   },
   // 'summary' is required and of type String
   summary: {
     type: String,
     required: true
   },
-  // 'date' is required and of type String
-  date: {
-    type: String,
-    required: true
-  }, 
+ 
   // 'comment' is an object that stores a Comment id
   // The ref property links the ObnectId to the Comment model
   // This allows us to populate the Article with an associated Comment
