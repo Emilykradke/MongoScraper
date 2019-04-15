@@ -87,10 +87,29 @@ app.get("/articles", function(req, res) {
     });
 });
 
-// A GET route for grabbing a specific article by id, then populating it with its comment
+app.get("/favorites", function (req, res) {
+  db.Article.find({ saved: true }).then(function (dbArticle) {
+    res.json(dbArticle);
+    console.log(dbArticle)
+  }).catch(function (err) {
+    res.json(err);
+  });
+})
 
+app.post('/articles/:id', function (req, res) {
+  let id = req.params.id
+  db.Article.updateOne({ _id: id }, { $set: { saved: true } }, function (error, edited) {
+      if (error) {
+          console.log(error);
+          res.send(error);
+      }
+      else {
+          console.log(edited);
+          res.send(edited);
+      }
+  })
+})
 
-// A POST route for saving/updating an article's associated comment
 
 
 // Start the server

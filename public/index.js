@@ -25,3 +25,17 @@ $(document).on("click", "#scrapeArticlesButton", function() {
     }
   });
 });
+
+$(document).on('click', '.btn-save', function (e) {
+  e.preventDefault();
+  let thisId = $(this).attr('data-id');
+  $.ajax({
+      method: "POST",
+      url: "/articles/" + thisId,
+  }).then(function (data) {
+      console.log(data)
+  })
+});
+
+
+
